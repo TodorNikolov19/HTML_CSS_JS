@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple CSS animations</title>
+    <style>
+      
+      .Animation {
+       /*1 */
+        /* transition-duration: 5s;*/
+        /*закъснението важи и след махането на мишката*/
+       /* transition-delay: : 1s;*/
+        /*Запозчва да мига* при посочване*/
+      /*  transition-property: background-color;*/
+        
+        /*2*/
+        /*Времетраене за всяко едно от свойтвата -  background, color, padding-left*/
+       /* transition-duration: 0.5s, 0.5s, 0.3s;
+        transition-delay: 0s, 0.5s, 1s;
+        transition-property: background, color, padding-left;
+        */
+        
+        /*3-ти вариант*/
+        transition: background 10s, border 0.3s 1s, font-size 0.5s;
+        
+        
+        padding: 16px;
+        cursor: pointer;
+        /* those properties will be animated from */
+        color: darkorange;
+        background: black;
+      }
+      
+       .Animation:hover {
+        /* those properties will be animated to */
+        background: orangered;
+        color: white;
+      }
+      
+      
+      /* transition(преход) - времето необходимо за пояна на ефект*/
+       p {
+            transition: 2500ms;
+        }
+        p:hover {
+            background-color: greenyellow;
+            color: red;
+        }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="Animation">
+      CSS Animation One!
+    </div>
+    
+    <p> CSS Animation Two!</p>
+
+    
+  </body>
+</html>
+
