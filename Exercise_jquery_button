@@ -1,0 +1,23 @@
+<html>
+    
+   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+    <body>
+        <button id="ButtonCl">Clik me</button>
+        <!-- display: none - скрива текста заедно с форматиратето му -->   
+         <p id="message" style="display: none;" >Hello now</p>
+        
+        <script>
+             const button= $("#ButtonCl");
+             const message= $("#message");
+             //задължитерно с малки букви
+             button.on("click",function(){
+            message.fadeToggle();
+             //друг вариант
+             //message.fadeToggle(3000);
+             });
+        </script>
+        
+    </body>
+</html>
